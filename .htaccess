@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} =off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !=/favicon.ico
+    RewriteCond %{REQUEST_URI} !(\.css|\.js|\.xml|\.txt|\.png|\.jpg|\.jpeg|\.gif|\.ico|\.svg|\.ttf|\.otf|\.eot|\.woff)$
+    RewriteRule ^ index.php [L]
+</IfModule>

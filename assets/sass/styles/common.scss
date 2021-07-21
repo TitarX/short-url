@@ -1,0 +1,33 @@
+// Navbar >>>
+nav.navbar {
+  a.nav-link {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 991px) {
+    a.nav-link {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// <<< Navbar
+
+// Forms >>>
+form {
+  #shorturl-code-wrapper {
+    display: flex;
+
+    label {
+      margin: 0px;
+      font-size: 22px;
+      margin-right: 3px;
+    }
+  }
+
+  label {
+    font-size: 22px;
+  }
+}
+
+// <<< Forms

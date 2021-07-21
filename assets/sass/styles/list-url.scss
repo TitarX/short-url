@@ -1,0 +1,72 @@
+@import "../vars/colors.scss";
+
+.url-item {
+  border-bottom: 1px solid $darkGray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .row {
+    &:nth-child(odd) {
+      background-color: lighten($primary, 40%);
+    }
+
+    &:nth-child(even) {
+      background-color: lighten($warning, 40%);
+    }
+
+    &:last-child {
+      background-color: transparent;
+    }
+
+    &.url-item-controls {
+      .url-item-edit {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+          background-color: $success;
+          color: $white;
+          border-radius: 0px;
+        }
+      }
+
+      .url-item-remove {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+          background-color: $danger;
+          color: $white;
+          border-radius: 0px;
+        }
+      }
+    }
+
+    .col {
+      text-align: left;
+
+      &.url-label {
+        font-weight: bold;
+      }
+
+      &.url-item-edit {
+        background-color: lighten($success, 40%);
+      }
+
+      &.url-item-remove {
+        background-color: lighten($danger, 40%);
+      }
+    }
+  }
+}
+
+// Forms >>>
+form {
+  .shorturl-disabled {
+    opacity: 0.3;
+  }
+}
+
+// <<< Forms
