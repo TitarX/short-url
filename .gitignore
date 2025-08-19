@@ -1,2 +1,10 @@
+# IDE
+.idea/
+.fleet/
+.vscode/
+nbproject/
+.phpintel/
+.zed/
+.project
+
 node_modules/*
-.idea/*
