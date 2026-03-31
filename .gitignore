@@ -6,5 +6,12 @@ nbproject/
 .phpintel/
 .zed/
 .project
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.kate-swp
 
-node_modules/*
+config.php
+/node_modules
+
+/adminer
